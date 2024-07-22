@@ -1,0 +1,23 @@
+{
+    "compileOnSave": false,
+    "files": [],
+    "compilerOptions": {
+        "outDir": "${configDir}/build",
+        "strict": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "bundler",
+        "importHelpers": true,
+        "target": "ES2022",
+        "module": "ES2022",
+        "lib": ["ES2022"],
+        "composite": true
+    },
+    "include": ["${configDir}/src/**/*"]
+}

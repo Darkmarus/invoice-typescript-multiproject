@@ -1,0 +1,25 @@
+{
+    "name": "invoice-local",
+    "version": "1.0.0",
+    "scripts": {
+        "prettier": "prettier --write .",
+        "delete": "node script/delete.js --path packages --folder build",
+        "build": "npm run delete && tsc -b"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "workspaces": [
+        "packages/projects/domain",
+        "packages/projects/application",
+        "packages/projects/infrastructure",
+        "packages/projects/presentation",
+        "packages/projects/starter"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "prettier": "3.3.3",
+        "typescript": "5.5.3"
+    }
+}
