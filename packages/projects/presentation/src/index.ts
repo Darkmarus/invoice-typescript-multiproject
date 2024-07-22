@@ -1,3 +1,3 @@
-export function getPresentation(): string {
-    return 'presentation';
+export function example2() {
+    console.log('test');
 }

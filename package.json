@@ -11,12 +11,8 @@
     "license": "ISC",
     "description": "",
     "workspaces": [
-        "packages/libs/commons",
-        "packages/projects/domain",
-        "packages/projects/infrastructure",
-        "packages/projects/application",
-        "packages/projects/presentation",
-        "packages/projects/starter"
+        "packages/libs/*",
+        "packages/projects/*"
     ],
     "devDependencies": {
         "@types/node": "20.14.11",

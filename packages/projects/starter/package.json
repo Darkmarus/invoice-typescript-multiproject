@@ -7,7 +7,7 @@
     "license": "ISC",
     "description": "",
     "dependencies": {
-        "@invoice/application": "1.0.0",
+        "@invoice/application": "file:../application",
         "@invoice/domain": "1.0.0",
         "@invoice/infrastructure": "1.0.0",
         "@invoice/presentation": "1.0.0",

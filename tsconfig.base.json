@@ -1,5 +1,6 @@
 {
     "compileOnSave": false,
+    "include": ["${configDir}/src/**/*"],
     "compilerOptions": {
         "outDir": "${configDir}/dist",
         "rootDir": "${configDir}/src",
@@ -17,6 +18,7 @@
         "target": "ES2022",
         "module": "NodeNext",
         "lib": ["ES2022"],
-        "composite": true
+        "composite": true,
+        "declaration": true
     }
 }

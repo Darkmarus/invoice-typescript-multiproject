@@ -1,3 +1,3 @@
-import { getPresentation } from '@invoice/presentation';
+import { example2 } from "@invoice/presentation";
 
-getPresentation();
+example2
