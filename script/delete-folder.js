@@ -12,6 +12,8 @@ exports.deleteDistFolders = async (directory, folderName) => {
             } else {
                 await this.deleteDistFolders(fullPath, folderName);
             }
+        } else if (item.name.includes('.tsbuildinfo')) {
+            await fs.rm(fullPath, { recursive: true, force: true });
         }
     }
 };
