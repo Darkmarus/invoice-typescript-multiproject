@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "scripts": {
         "prettier": "prettier --write .",
-        "delete": "node script/delete.js --path packages --folder build",
-        "build": "npm run delete && tsc -b --verbose"
+        "delete": "node script/delete.js --path packages --folder dist",
+        "build": "npm run delete && tsc -b"
     },
     "keywords": [],
     "author": "",

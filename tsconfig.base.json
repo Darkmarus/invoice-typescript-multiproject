@@ -1,7 +1,7 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
-        "outDir": "${configDir}/build",
+        "outDir": "${configDir}/dist",
         "rootDir": "${configDir}/src",
         "strict": true,
         "noImplicitOverride": true,
