@@ -1,11 +1,14 @@
 {
     "name": "@invoice/infrastructure",
     "version": "1.0.0",
-    "main": "index.js",
-    "devDependencies": {},
     "scripts": {},
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": ""
+    "description": "",
+    "dependencies": {
+        "postgres": "^3.4.4",
+        "rabbitmq-client": "^4.6.0",
+        "sequelize": "^6.37.3"
+    }
 }

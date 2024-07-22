@@ -4,21 +4,22 @@
     "scripts": {
         "prettier": "prettier --write .",
         "delete": "node script/delete.js --path packages --folder build",
-        "build": "npm run delete && tsc -b"
+        "build": "npm run delete && tsc -b --verbose"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "",
     "workspaces": [
+        "packages/libs/commons",
         "packages/projects/domain",
-        "packages/projects/application",
         "packages/projects/infrastructure",
+        "packages/projects/application",
         "packages/projects/presentation",
         "packages/projects/starter"
     ],
-    "dependencies": {},
     "devDependencies": {
+        "@types/node": "20.14.11",
         "prettier": "3.3.3",
         "typescript": "5.5.3"
     }

@@ -7,11 +7,11 @@
     "license": "ISC",
     "description": "",
     "dependencies": {
-        "@invoice/application": "^1.0.0",
-        "@invoice/domain": "^1.0.0",
-        "@invoice/infrastructure": "^1.0.0",
-        "@invoice/presentation": "^1.0.0",
-        "@invoice/starter": "^1.0.0"
+        "@invoice/application": "1.0.0",
+        "@invoice/domain": "1.0.0",
+        "@invoice/infrastructure": "1.0.0",
+        "@invoice/presentation": "1.0.0",
+        "@invoice/starter": "1.0.0"
     },
     "devDependencies": {}
 }
