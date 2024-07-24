@@ -1,13 +1,14 @@
 {
     "name": "@invoice/starter",
     "version": "1.0.0",
+    "type": "module",
     "scripts": {},
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
-        "@invoice/application": "file:../application",
+        "@invoice/application": "1.0.0",
         "@invoice/domain": "1.0.0",
         "@invoice/infrastructure": "1.0.0",
         "@invoice/presentation": "1.0.0",

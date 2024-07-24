@@ -1,6 +1,6 @@
 {
     "compileOnSave": false,
-    "include": ["${configDir}/src/**/*"],
+    "include": ["${configDir}/src"],
     "compilerOptions": {
         "outDir": "${configDir}/dist",
         "rootDir": "${configDir}/src",
@@ -13,10 +13,10 @@
         "esModuleInterop": true,
         "sourceMap": true,
         "experimentalDecorators": true,
-        "moduleResolution": "NodeNext",
+        "moduleResolution": "Node16",
         "importHelpers": true,
         "target": "ES2022",
-        "module": "NodeNext",
+        "module": "Node16",
         "lib": ["ES2022"],
         "composite": true,
         "declaration": true

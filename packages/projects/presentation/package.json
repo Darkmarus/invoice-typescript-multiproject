@@ -1,8 +1,10 @@
 {
     "name": "@invoice/presentation",
     "version": "1.0.0",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "type": "module",
+    "exports": {
+        "./*": "./dist/*.d.ts"
+    },
     "scripts": {},
     "keywords": [],
     "author": "",

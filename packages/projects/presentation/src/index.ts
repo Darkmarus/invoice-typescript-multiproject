@@ -1,3 +1,3 @@
-export function example2() {
+export function test() {
     console.log('test');
 }

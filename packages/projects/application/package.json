@@ -1,8 +1,10 @@
 {
     "name": "@invoice/application",
     "version": "1.0.0",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "type": "module",
+    "exports": {
+        "./*": "./dist/*"
+    },
     "devDependencies": {},
     "scripts": {},
     "keywords": [],
