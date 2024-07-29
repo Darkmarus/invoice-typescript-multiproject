@@ -1,4 +1,4 @@
-const { parseCommandLineArguments } = require('./command-parse');
+const { parseCommandLineArguments } = require('./command-arguments-parse');
 const { deleteDistFolders } = require('./delete-folder');
 
 const { path: directory, folder: folderName } = parseCommandLineArguments();

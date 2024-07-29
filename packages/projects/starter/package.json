@@ -2,7 +2,9 @@
     "name": "@invoice/starter",
     "version": "1.0.0",
     "type": "module",
-    "scripts": {},
+    "scripts": {
+        "start": "tsx src/index.mts"
+    },
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -11,8 +13,9 @@
         "@invoice/application": "1.0.0",
         "@invoice/domain": "1.0.0",
         "@invoice/infrastructure": "1.0.0",
-        "@invoice/presentation": "1.0.0",
-        "@invoice/starter": "1.0.0"
+        "@invoice/presentation": "1.0.0"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "nodemon": "3.1.4"
+    }
 }
