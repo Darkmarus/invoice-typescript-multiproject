@@ -1,3 +1,17 @@
-import { test } from '@invoice/presentation';
+import { initServer } from "@invoice/presentation";
 
-test();
+
+/**
+ * The main function that starts the server.
+ *
+ * @return {Promise<void>} A promise that resolves when the server has started.
+ */
+async function main() {
+    // Database.instance.sync().then(() => {
+    await initServer
+    // });
+}
+
+(() => {
+    main();
+})();

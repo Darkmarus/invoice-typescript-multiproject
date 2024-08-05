@@ -2,7 +2,7 @@
     "name": "invoice-local",
     "version": "1.0.0",
     "scripts": {
-        "start": " npm run start -w @invoice/starter",
+        "dev": "npm run dev -w @invoice/starter",
         "prettier": "prettier --write .",
         "delete": "node script/delete.js --path packages --folder dist",
         "build": "npm run delete && tsc -b"

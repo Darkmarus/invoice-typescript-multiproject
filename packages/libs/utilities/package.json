@@ -1,9 +1,8 @@
 {
-    "name": "@invoice-libs/commons",
+    "name": "@invoice-libs/utilities",
     "version": "1.0.0",
     "type": "module",
     "exports": {
-        ".": "./dist/index.mjs",
         "./*": "./dist/*.mjs"
     },
     "devDependencies": {},
