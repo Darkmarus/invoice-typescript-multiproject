@@ -1,0 +1,21 @@
+{
+    "watch": [
+        ".env",
+        "packages/libs/commons/src",
+        "packages/libs/utilities/src",
+        "packages/projects/application/src",
+        "packages/projects/domain/src",
+        "packages/projects/infrastructure/src",
+        "packages/projects/presentation/src",
+        "packages/projects/starter/src"
+    ],
+    "events": {
+        "start": "cls || clear"
+    },
+    "env": {
+        "DEBUG": "nodemon",
+        "NODE_ENV": "development"
+    },
+    "ext": "mts,json",
+    "exec": "npm run build && node --env-file .env packages/projects/starter/dist/index.mjs"
+}

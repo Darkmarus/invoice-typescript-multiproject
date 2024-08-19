@@ -1,7 +1,0 @@
-{
-    "verbose": true,
-    "watch": [".env", "src", "../application/src", "../domain/src", "../infrastructure/src", "../presentation/src"],
-    "ext": "ts,json",
-    "ignore": ["./../../**/*.spec.ts"],
-    "exec": "npm --prefix ../../../ run build && npm start"
-}

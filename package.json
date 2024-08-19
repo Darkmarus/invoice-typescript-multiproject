@@ -2,10 +2,11 @@
     "name": "invoice-local",
     "version": "1.0.0",
     "scripts": {
-        "dev": "npm run dev -w @invoice/starter",
         "prettier": "prettier --write .",
         "delete": "node script/delete.js --path packages --folder dist",
-        "build": "npm run delete && tsc -b"
+        "build": "npm run delete && tsc -b",
+        "build:dev": "npm run build && npm run start -w @invoice/starter",
+        "dev": "nodemon --config nodemon.json"
     },
     "keywords": [],
     "author": "",
@@ -15,9 +16,9 @@
         "packages/libs/*",
         "packages/projects/*"
     ],
-    "dependencies": {},
     "devDependencies": {
         "@types/node": "20.14.11",
+        "nodemon": "3.1.4",
         "prettier": "3.3.3",
         "typescript": "5.5.3"
     },

@@ -1,5 +1,4 @@
-import { initServer } from "@invoice/presentation";
-
+import { initServer } from '@invoice/presentation';
 
 /**
  * The main function that starts the server.
@@ -8,7 +7,7 @@ import { initServer } from "@invoice/presentation";
  */
 async function main() {
     // Database.instance.sync().then(() => {
-    await initServer
+    initServer();
     // });
 }
 
