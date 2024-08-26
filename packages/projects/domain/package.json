@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "type": "module",
     "exports": {
-        "./*": "./dist/*.d.ts"
+        "./*": "./dist/*.mjs"
     },
     "scripts": {},
     "keywords": [],

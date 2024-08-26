@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+import { Database } from '@invoice/infrastructure/persistence/database';
 import { initServer } from '@invoice/presentation';
 
 /**
@@ -6,9 +8,9 @@ import { initServer } from '@invoice/presentation';
  * @return {Promise<void>} A promise that resolves when the server has started.
  */
 async function main() {
-    // Database.instance.sync().then(() => {
-    initServer();
-    // });
+    Database.instance.sync().then(() => {
+        initServer();
+    });
 }
 
 (() => {

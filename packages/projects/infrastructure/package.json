@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "type": "module",
     "exports": {
-        "./*": "./dist/*.d.mjs"
+        "./*": "./dist/*.mjs"
     },
     "scripts": {},
     "keywords": [],
@@ -12,8 +12,8 @@
     "description": "",
     "dependencies": {
         "@invoice-libs/utilities": "1.0.0",
-        "postgres": "^3.4.4",
-        "rabbitmq-client": "^4.6.0",
-        "sequelize": "^6.37.3"
+        "pg": "8.12.0",
+        "rabbitmq-client": "4.6.0",
+        "sequelize": "6.37.3"
     }
 }

@@ -17,5 +17,6 @@
         "NODE_ENV": "development"
     },
     "ext": "mts,json",
-    "exec": "npm run build && node --env-file .env packages/projects/starter/dist/index.mjs"
+    "delay": "4000",
+    "exec": "npm run build && node --inspect=0.0.0.0:9229 --env-file .env packages/projects/starter/dist/index.mjs"
 }

@@ -1,5 +1,6 @@
 import { Properties } from '@invoice-libs/utilities/properties';
 
+export const PORT = Properties.getNumber('PORT');
 export const INVOICE_DATABASE_HOST = Properties.getString('INVOICE_DATABASE_HOST');
 export const INVOICE_DATABASE_PORT = Properties.getNumber('INVOICE_DATABASE_PORT');
 export const INVOICE_DATABASE_NAME = Properties.getString('INVOICE_DATABASE_NAME');

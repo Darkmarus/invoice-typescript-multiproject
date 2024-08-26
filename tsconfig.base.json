@@ -2,7 +2,7 @@
     "compileOnSave": false,
     "include": ["${configDir}/src"],
     "compilerOptions": {
-        "baseUrl": "${configDir}",
+        "baseUrl": "${configDir}/src",
         "outDir": "${configDir}/dist",
         "rootDir": "${configDir}/src",
         "emitDecoratorMetadata": true,
