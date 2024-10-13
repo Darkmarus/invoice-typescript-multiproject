@@ -1,0 +1,32 @@
+{
+    "compileOnSave": false,
+    "include": ["${configDir}/src"],
+    "compilerOptions": {
+        "baseUrl": "${configDir}/src",
+        "outDir": "${configDir}/dist",
+        "rootDir": "${configDir}/src",
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "allowJs": false,
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "lib": ["ES2023"],
+        "module": "NodeNext",
+        "moduleResolution": "nodenext",
+        "moduleDetection": "force",
+        "noUncheckedIndexedAccess": true,
+        "verbatimModuleSyntax": true,
+        "noImplicitAny": true,
+        "resolveJsonModule": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ES2023"
+    }
+}

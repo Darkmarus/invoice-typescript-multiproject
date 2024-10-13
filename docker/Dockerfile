@@ -1,10 +1,12 @@
-FROM node:22.8-alpine as build
+FROM node:22.9.0-alpine3.20 as build
 
 USER root
 
 WORKDIR /app
 
 COPY . .
+
+COPY ./tsconfig.prod.json ./tsconfig.base.json
 
 RUN chmod -R 777 /app
 
@@ -17,7 +19,7 @@ RUN find packages -type d -name 'src' -exec rm -rf \{\} +
 RUN find packages -type f -name 'tsconfig*' -exec rm -rf \{\} +
 
 
-FROM node:22.8-alpine as deploy
+FROM node:22.9.0-alpine3.20 as deploy
 
 WORKDIR /app
 
@@ -29,4 +31,4 @@ COPY --from=build /app/package.json ./
 
 EXPOSE 3000
 
-CMD ["node", "packages/projects/starter/dist/index.mjs"]
+CMD ["npm", "start"]
