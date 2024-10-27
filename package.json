@@ -5,7 +5,6 @@
         "prettier": "prettier --write .",
         "delete": "node script/delete.js --path packages --folder dist",
         "build": "npm run delete && tsc -b",
-        "build:dev": "npm run delete && tsc -b",
         "dev": "nodemon --config nodemon.json",
         "start": "node packages/projects/starter/dist/index.mjs"
     },
