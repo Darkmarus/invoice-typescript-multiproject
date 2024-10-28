@@ -17,12 +17,12 @@
         "packages/projects/*"
     ],
     "devDependencies": {
-        "@types/node": "20.14.11",
-        "nodemon": "3.1.4",
+        "@types/node": "22.8.1",
+        "nodemon": "3.1.7",
         "prettier": "3.3.3",
-        "typescript": "5.5.3"
+        "typescript": "5.6.3"
     },
     "engines": {
-        "node": ">= 22.5"
+        "node": ">= 23"
     }
 }
