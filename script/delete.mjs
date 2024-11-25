@@ -1,14 +1,14 @@
-const { parseCommandLineArguments } = require('./command-arguments-parse');
-const { deleteDistFolders } = require('./delete-folder');
+import parseCommandLineArguments from './command-arguments-parse.mjs';
+import deleteDistFolders from './delete-folder.mjs';
 
-const { path: directory, folder: folderName } = parseCommandLineArguments();
+const { path: directory, delete: deleteFilter } = parseCommandLineArguments();
 
-if (!folderName) {
+if (!deleteFilter) {
     console.error('Usage: node deleteFolders.js <directory> <folder name>');
     process.exit(1);
 }
 
-deleteDistFolders(directory, folderName)
+deleteDistFolders(directory, deleteFilter)
     .then(() => {
         console.log('All specified folders deleted.');
         process.exit(0); // Asegura que el script termina exitosamente

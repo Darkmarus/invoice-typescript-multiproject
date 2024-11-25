@@ -1,0 +1,11 @@
+databaseChangeLog:
+    - changeSet:
+          id: 1
+          author: Omar Rogelio Cruz
+          changes:
+              - sqlFile:
+                    path: schema/products/init_schema.sql
+                    relativeToChangelogFile: true
+                    endDelimiter: ';'
+                    splitStatements: true
+                    stripComments: true

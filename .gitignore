@@ -132,3 +132,4 @@ dist
 dist
 build
 package-lock.json
+.idea

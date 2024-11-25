@@ -1,4 +1,4 @@
-FROM node:23.0.0-alpine3.20 as build
+FROM node:22.11.0-alpine as build
 
 USER root
 
@@ -19,7 +19,7 @@ RUN find packages -type d -name 'src' -exec rm -rf \{\} +
 RUN find packages -type f -name 'tsconfig*' -exec rm -rf \{\} +
 
 
-FROM node:23.0.0-alpine3.20 as deploy
+FROM node:22.11.0-alpine as deploy
 
 WORKDIR /app
 

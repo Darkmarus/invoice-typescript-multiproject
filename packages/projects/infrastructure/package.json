@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "type": "module",
     "exports": {
+        ".": "./dist/index.mjs",
         "./*": "./dist/*.mjs"
     },
     "scripts": {},
@@ -11,9 +12,16 @@
     "license": "ISC",
     "description": "",
     "dependencies": {
+        "@invoice/domain": "1.0.0",
+        "@invoice/application": "1.0.0",
         "@invoice-libs/utilities": "1.0.0",
+        "@nats-io/transport-node": "3.0.0-24",
+        "express": "5.0.1",
         "pg": "8.13.1",
-        "rabbitmq-client": "5.0.0",
+        "reflect-metadata": "0.2.2",
         "sequelize": "6.37.5"
+    },
+    "devDependencies": {
+        "@types/express": "5.0.0"
     }
 }

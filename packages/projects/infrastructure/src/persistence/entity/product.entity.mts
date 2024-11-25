@@ -45,5 +45,5 @@ export const ProductSequelize = sequelize.define<ProductEntity>(
     },
     {
         timestamps: true,
-    }
+    },
 );

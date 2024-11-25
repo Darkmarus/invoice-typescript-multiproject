@@ -1,0 +1,15 @@
+services:
+    liquibase:
+        image: liquibase/liquibase
+        container_name: liquibase
+        environment:
+            LIQUIBASE_URL: jdbc:postgresql://postgres-local:${INVOICE_DATABASE_PORT}/${INVOICE_DATABASE_NAME}
+            LIQUIBASE_USERNAME: ${INVOICE_DATABASE_USER}
+            LIQUIBASE_PASSWORD: ${INVOICE_DATABASE_PASSWORD}
+            LIQUIBASE_CHANGELOG_FILE: /liquibase/changelog/db.changelog-master.yaml
+        volumes:
+            - ./liquibase/db.changelog-master.yaml:/liquibase/changelog/db.changelog-master.yaml
+        entrypoint: ['liquibase', 'update']
+networks:
+    local-database:
+        driver: bridge

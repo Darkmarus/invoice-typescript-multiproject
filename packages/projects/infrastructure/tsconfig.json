@@ -3,6 +3,12 @@
     "references": [
         {
             "path": "../../libs/utilities"
+        },
+        {
+            "path": "../domain/tsconfig.json"
+        },
+        {
+            "path": "../application/tsconfig.json"
         }
     ]
 }

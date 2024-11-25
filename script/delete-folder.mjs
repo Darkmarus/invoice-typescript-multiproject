@@ -1,7 +1,7 @@
-const fs = require('fs').promises;
-const path = require('path');
+import fs from 'fs/promises';
+import path from 'path';
 
-exports.deleteDistFolders = async (directory, folderName) => {
+export default async function deleteDistFolders(directory, folderName) {
     const items = await fs.readdir(directory, { withFileTypes: true });
     for (const item of items) {
         const fullPath = path.join(directory, item.name);
@@ -10,10 +10,10 @@ exports.deleteDistFolders = async (directory, folderName) => {
                 await fs.rm(fullPath, { recursive: true, force: true });
                 console.log(`Deleted: ${fullPath}`);
             } else {
-                await this.deleteDistFolders(fullPath, folderName);
+                await deleteDistFolders(fullPath, folderName);
             }
         } else if (item.name.includes('.tsbuildinfo')) {
             await fs.rm(fullPath, { recursive: true, force: true });
         }
     }
-};
+}
