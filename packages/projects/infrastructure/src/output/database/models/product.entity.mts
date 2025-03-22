@@ -1,5 +1,6 @@
+import { Database } from 'config/database.mjs';
 import { DataTypes, Model } from 'sequelize';
-import { Database } from '@invoice/infrastructure/persistence/database';
+
 
 const sequelize = Database.instance;
 export class ProductEntity extends Model {
