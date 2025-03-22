@@ -1,4 +1,4 @@
-import { Properties } from '@invoice-libs/utilities/properties';
+import { Properties } from './properties.mjs';
 
 export const PORT = Properties.getNumber('PORT');
 export const INVOICE_DATABASE_HOST = Properties.getString('INVOICE_DATABASE_HOST');

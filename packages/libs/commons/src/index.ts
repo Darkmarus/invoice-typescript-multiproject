@@ -1,3 +1,3 @@
-export function getPresentation(): string {
-    return 'presentation';
+export function getProject(): string {
+    return 'Commons';
 }

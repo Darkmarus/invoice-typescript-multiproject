@@ -1,4 +1,4 @@
-import { PORT } from '@invoice-libs/utilities/envs';
+import { PORT } from './config/system/envs.mjs';
 import { AppRoutes } from './config/routes.mjs';
 import { Server } from './config/server.mjs';
 import { Database } from './config/database.mjs';

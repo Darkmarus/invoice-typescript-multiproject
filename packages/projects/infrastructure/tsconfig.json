@@ -2,13 +2,7 @@
     "extends": "../../../tsconfig.base.json",
     "references": [
         {
-            "path": "../../libs/utilities"
-        },
-        {
-            "path": "../domain/tsconfig.json"
-        },
-        {
-            "path": "../application/tsconfig.json"
+            "path": "../../libs/commons/tsconfig.json"
         }
     ]
 }

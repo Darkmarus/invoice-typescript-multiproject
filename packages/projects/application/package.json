@@ -5,6 +5,11 @@
     "exports": {
         "./*": "./dist/*.mjs"
     },
+    "dependencies": {
+        "@invoice-libs/commons": "1.0.0",
+        "@invoice/domain": "1.0.0",
+        "@invoice/application": "1.0.0"
+    },
     "devDependencies": {},
     "scripts": {},
     "keywords": [],

@@ -4,7 +4,7 @@ import {
     INVOICE_DATABASE_PASSWORD,
     INVOICE_DATABASE_PORT,
     INVOICE_DATABASE_USER,
-} from '@invoice-libs/utilities/envs';
+} from './system/envs.mjs';
 import { Sequelize } from 'sequelize';
 
 export class Database {
