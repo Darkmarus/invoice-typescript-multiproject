@@ -1,7 +1,6 @@
 import { Database } from 'config/database.mjs';
 import { DataTypes, Model } from 'sequelize';
 
-
 const sequelize = Database.instance;
 
 export class FileEntity extends Model {
